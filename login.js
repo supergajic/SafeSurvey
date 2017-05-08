@@ -1,7 +1,11 @@
 "use strict";
+$('#formbox').css("display","none");
+$('#but_save').css("display", "none");
 if (window.localStorage.getItem("key") > 0) {
 
-	document.getElementById("hejda").innerHTML = "Local storage exist";
+	$('.main').css("display","none");
+				$('#formbox').css("display","initial");
+				$('#but_save').css("display", "initial");
 
 };
 var loginDB = function() {
@@ -28,6 +32,10 @@ var loginDB = function() {
 			{
 				window.localStorage.setItem("key", jcontent.id);
 				document.getElementById("hejda").innerHTML = "Lokal användare registrerad";
+				$('.main').css("display","none");
+				$('#formbox').css("display","initial");
+				$('#but_save').css("display", "initial");
+
 			}
 			else if(jcontent.includes("Fail"))
 			{

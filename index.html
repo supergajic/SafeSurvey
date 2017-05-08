@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+    <meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline'; style-src 'self' 'unsafe-inline'; media-src *" />
+    <link rel="stylesheet" type="text/css" href="css/index.css" />
+    <title>Appen</title>
+</head>
+
+<body >
+
+    <div data-role="page" id="page-signin">
+        <div data-role="header" data-theme="c" data-position="fixed">
+                <a href="#page-index" data-icon="home" data-iconpos="notext" data-transition="slide" data-direction="reverse"></a>
+
+            </div><!-- /header -->
+        <div class="main" role="main" class="ui-content">
+        <form id="form" method="post">
+            <div id="ctn-err" class="bi-invisible"></div>
+            <input id="user" type="text" placeholder="Email" name="txt-email-address" id="txt-email-address" value="">
+            <label for="txt-email-address"></label><br>
+
+            <input id="pw" type="password" placeholder="Password" name="txt-password" id="txt-password" value="">
+            <label for="txt-password"></label><br>
+            <button class="loggin" type="button" onclick='checkValue()'>LOGIN</button><br>
+            <a href="reg.html" class="new_user" type="submit" name="new_user">REGISTRERA DIG</a>
+        </form>
+        </div>
+    </div>
+    <div id="hejda">
+
+    </div>
+
+
+    <div id="formbox">
+    </div>
+    <div id="share"></div>
+
+    <button id="but_save">Click me</button>
+    <!-- <button id="but_add">add</button>
+    <button id="but_clear">clear</button> -->
+    <div id="savethat"></div>
+    <div id="addthat"></div>
+    <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="js/questions.js"></script>
+    <script type="text/javascript" src="js/login.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+    <script type="text/javascript" src="js/remove.js"></script>
+
+</body>
+</html>
