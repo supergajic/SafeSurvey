@@ -48,10 +48,7 @@ var sendData = function() {
 			done = true;
 		}
 	}
-	if (emp.length == questionare.question.length) {
-		window.localStorage.setItem("finish", 2);
-
-	};
+	
 	if(done) $(window).ready(userinfo);
 };
 $(window).ready(getQuest);
@@ -61,5 +58,9 @@ $('#try').click(userinfo);
 $('#try').click(function() {
 	calc = calc + 1;
 })
-
 var doThis = JSON.stringify(emp);
+if (emp.length == questionare.question.length) {
+		window.localStorage.setItem("finish", doThis);
+
+	};
+
